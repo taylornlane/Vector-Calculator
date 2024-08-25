@@ -1,0 +1,50 @@
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vector Calculator</h1>
+        
+        <div class="input-section">
+            <h2>Vector 1</h2>
+            a = &lt;
+            <input type="number" id="vector1-x" placeholder="X1">,
+            <input type="number" id="vector1-y" placeholder="Y1">,
+            <input type="number" id="vector1-z" placeholder="Z1">
+            &gt;
+        </div>
+
+        <div class="input-section">
+            <h2>Vector 2 (Optional)</h2>
+            b = &lt;
+            <input type="number" id="vector2-x" placeholder="X2">,
+            <input type="number" id="vector2-y" placeholder="Y2">,
+            <input type="number" id="vector2-z" placeholder="Z2">
+            &gt;
+        </div>
+
+        <div class="input-section">
+            <h2>Scalar Value (Optional)</h2>
+            <input type="number" id="scalar-value" placeholder="Scalar">
+        </div>
+
+        <div class="operations">
+            <button onclick="calculate('dotProduct')">Dot Product</button>
+            <button onclick="calculate('scalarMultiple')">Scalar Multiple</button>
+            <button onclick="calculate('scalarAddition')">Scalar Addition</button>
+            <button onclick="calculate('findMagnitude')">Magnitude</button>
+            <button onclick="calculate('findAngle')">Angle Between Vectors</button>
+            <button onclick="calculate('crossProduct')">Cross Product</button>
+            <button onclick="calculate('vectorProjection')">Vector Projection</button>
+        </div>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
