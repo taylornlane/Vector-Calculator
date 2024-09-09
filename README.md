@@ -9,10 +9,12 @@ Features:
 - Angle between vectors
 - Interactive web interface for seamless vector operation input
 - Responsive design using HTML/CSS for a smooth user experience
+
 Technologies Used:
 - C++: Original implementation
 - JavaScript: Translated logic for web interactivity
 - HTML/CSS: Web interface design and styling
+
 How to Use:
 - Enter vector components in the provided fields.
 - Choose the desired operation (e.g., addition, dot product).
